@@ -1,4 +1,4 @@
-package com.example.kafka.controller;
+package com.javapoint.kafka.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.kafka.model.Product;
-import com.example.kafka.service.KafkaProducerService;
+import com.javapoint.kafka.model.Product;
+import com.javapoint.kafka.service.KafkaProducerService;
 
 
 @RestController

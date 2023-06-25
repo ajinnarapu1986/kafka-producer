@@ -1,4 +1,4 @@
-package com.example.kafka.model;
+package com.javapoint.kafka.model;
 
 public class Product {
 	private Integer id;

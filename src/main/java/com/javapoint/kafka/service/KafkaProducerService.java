@@ -1,4 +1,4 @@
-package com.example.kafka.service;
+package com.javapoint.kafka.service;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import com.example.kafka.AppConstants;
-import com.example.kafka.model.Product;
+import com.javapoint.kafka.AppConstants;
+import com.javapoint.kafka.model.Product;
 
 @Service
 public class KafkaProducerService {
@@ -25,7 +25,7 @@ public class KafkaProducerService {
 		products.forEach(product -> {
 			LOGGER.info("I am a Kafka Producer :: {}", product);
 
-			kafkaTemplate.send(AppConstants.TOPIC_NAME, product);
+			kafkaTemplate.send(AppConstants.TOPIC_RAW_DATA_NAME, product);
 		});
 
 	}
