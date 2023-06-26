@@ -3,7 +3,7 @@ package com.javapoint.kafka.model;
 public class LogMessage {
 	private String timestamp;
 	private String source;
-	private String severiy;
+	private String severity;
 	private String message;
 	private String component;
 	private String hostname;
@@ -24,12 +24,12 @@ public class LogMessage {
 		this.source = source;
 	}
 
-	public String getSeveriy() {
-		return severiy;
+	public String getSeverity() {
+		return severity;
 	}
 
-	public void setSeveriy(String severiy) {
-		this.severiy = severiy;
+	public void setSeverity(String severity) {
+		this.severity = severity;
 	}
 
 	public String getMessage() {
@@ -58,7 +58,7 @@ public class LogMessage {
 
 	@Override
 	public String toString() {
-		return "LogMessage [timestamp=" + timestamp + ", source=" + source + ", severiy=" + severiy + ", message="
+		return "LogMessage [timestamp=" + timestamp + ", source=" + source + ", severity=" + severity + ", message="
 				+ message + ", component=" + component + ", hostname=" + hostname + "]";
 	}
 
